@@ -1,0 +1,2 @@
+# app-gestao-educacional
+Operacional
