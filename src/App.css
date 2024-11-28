@@ -1,0 +1,358 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #003366; /* Azul escuro */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li.user-info {
+  margin-left: auto; /* Empurra o NIP para o lado direito */
+  color: #D3D3D3; /* Cinza claro */
+}
+
+nav ul li button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav ul li button:hover {
+  background-color: #005999; /* Azul mais claro para hover */
+}
+
+h2 {
+  color: #333;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column; /* Adicionado para alinhar verticalmente */
+}
+
+.logo-container img {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.menu {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px;
+}
+
+.menu ul {
+  padding: 0;
+  list-style-type: none; /* Remove os marcadores da lista */
+}
+
+.menu li {
+  margin: 10px 0; /* Adiciona espaço entre os itens do menu */
+}
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+.login-container form label {
+  margin-bottom: 5px;
+}
+
+.login-container form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container form button:hover {
+  background-color: #555;
+}
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container form div {
+  margin-bottom: 15px;
+}
+
+.register-container form label {
+  margin-bottom: 5px;
+}
+
+.register-container form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-container form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-container form button:hover {
+  background-color: #555;
+}
+.communication-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.communication-container h2 {
+  text-align: center;
+}
+
+.communication-container .messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.communication-container .messages .message {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.communication-container .messages .message.own-message {
+  background-color: #f4f4f4;
+}
+
+.communication-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.communication-container form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.communication-container form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.communication-container form button:hover {
+  background-color: #005999; /* Azul mais claro para hover */
+}
+.forums-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forums-container h2 {
+  text-align: center;
+}
+
+.forums-container form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.forums-container form input,
+.forums-container form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.forums-container form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forums-container form button:hover {
+  background-color: #005999; /* Azul mais claro para hover */
+}
+
+.topic {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.topic .messages .message {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.topic .messages .message.own-message {
+  background-color: #f4f4f4;
+}
+
+.topic form {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic form textarea {
+  height: 100px;
+  resize: none;
+}
+.library-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.library-container h2 {
+  text-align: center;
+}
+
+.library-container input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.library-container .pdf-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.library-container .pdf-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.library-container .pdf-item span {
+  cursor: pointer;
+  color: #003366;
+}
+
+.library-container .pdf-item span:hover {
+  text-decoration: underline;
+}
+
+.library-container .pdf-item button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.library-container .pdf-item button:hover {
+  background-color: #005999; /* Azul mais claro para hover */
+}
+
+.library-container .pdf-viewer {
+  margin-top: 20px;
+}
